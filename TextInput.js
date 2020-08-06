@@ -51,7 +51,9 @@ const TextInput = ({phText='', value='', setValue = () => null, label='none', mi
 }
 
 const Container = styled.div`
-    margin: 5px;
+    width: 95%;    
+    padding: 0px;
+    margin: 5px auto;
 `
 
 const FDRow = styled.div`
@@ -65,9 +67,17 @@ const FDCol = styled.div`
 `
 
 const Input = styled.input`
-    padding: 2px;
     font-size: 18px;
     width: 100%;
+    padding: 5px;
+    margin: 0px;
+    border: #ddd 1px solid;
+    background-color: white;
+
+    :focus {
+        outline: none;
+    }
+
 `
 
 const Label = styled.label`
